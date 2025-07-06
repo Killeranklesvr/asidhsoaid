@@ -1,0 +1,71 @@
+local _0xabc1 = ("K"..("i"):rep(2).."l"..string.reverse("re").."HubOnTop-1892729803137087")
+local _0xabc2 = table.concat({"https://direct","-link.net/1368","363/OWZV2tOc1bAg"})
+
+local s = game["G".."etSer"..("vice")]; local p = s(game, "Players")["LocalPlayer"]
+local g = Instance["new"]("ScreenGui", p:WaitForChild("PlayerGui"))
+g["Name"] = string.gsub("KXeySyztem","X","e") g["ResetOnSpawn"] = false
+
+local f = Instance["new"]("Frame", g)
+f["Size"] = UDim2["new"](0, 300, 0, 180)
+f["Position"] = UDim2["new"](0.5, -150, 0.5, -90)
+f["BackgroundColor3"] = Color3["fromRGB"](25, 25, 25)
+f["BorderColor3"] = Color3["fromRGB"](140, 0, 255)
+f["Active"] = true f["Draggable"] = true
+
+local t = Instance["new"]("TextLabel", f)
+t["Size"] = UDim2["new"](1, 0, 0, 30)
+t["Text"] = string.reverse("esi trevda sI yek ehT")
+t["TextColor3"] = Color3["fromRGB"](255, 255, 255)
+t["BackgroundTransparency"] = 1
+t["Font"] = Enum["Font"]["SourceSansBold"]
+t["TextSize"] = 16
+
+local i = Instance["new"]("TextBox", f)
+i["Size"] = UDim2["new"](0.8, 0, 0, 30)
+i["Position"] = UDim2["new"](0.1, 0, 0, 40)
+i["PlaceholderText"] = ("Enter your "):gsub(" ","").."key here"
+i["Text"] = ""
+i["TextColor3"] = Color3["new"](1, 1, 1)
+i["BackgroundColor3"] = Color3["fromRGB"](40, 40, 40)
+
+local sT = Instance["new"]("TextLabel", f)
+sT["Size"] = UDim2["new"](1, 0, 0, 20)
+sT["Position"] = UDim2["new"](0, 0, 1, -30)
+sT["BackgroundTransparency"] = 1
+sT["TextColor3"] = Color3["fromRGB"](255, 0, 0)
+sT["Text"] = ""
+
+local uB = Instance["new"]("TextButton", f)
+uB["Size"] = UDim2["new"](0.5, -5, 0, 30)
+uB["Position"] = UDim2["new"](0, 10, 0, 90)
+uB["Text"] = ("Unlock GUI"):gsub(" ", "\32")
+uB["TextColor3"] = Color3["fromRGB"](255, 255, 255)
+uB["BackgroundColor3"] = Color3["fromRGB"](60, 60, 60)
+
+local gB = Instance["new"]("TextButton", f)
+gB["Size"] = UDim2["new"](0.5, -5, 0, 30)
+gB["Position"] = UDim2["new"](0.5, 5, 0, 90)
+gB["Text"] = string.reverse("yeK teG")
+gB["TextColor3"] = Color3["fromRGB"](255, 255, 255)
+gB["BackgroundColor3"] = Color3["fromRGB"](90, 0, 255)
+
+local function weirdCopy(link)
+	if setclipboard then
+		setclipboard(link)
+		sT["Text"] = ("Key link copied"):gsub("copied", "copied to clipboard!")
+	else
+		sT["Text"] = string.reverse("!rotucexe no detroppus toN")
+	end
+end
+
+local function checkKey(entry)
+	if entry == _0xabc1 then
+		g:Destroy()
+		loadstring(game:HttpGet(string.gsub("https://raw.githubusercontent.com/Killeranklesvr/Universal_Killer_Hub/refs/heads/main/Script", "refs/heads", "refs/heads")))()
+	else
+		sT["Text"] = ("Invalid key! Get it from Linkvertise."):gsub(" ", "\32")
+	end
+end
+
+gB["MouseButton1Click"]:Connect(function() weirdCopy(_0xabc2) end)
+uB["MouseButton1Click"]:Connect(function() checkKey(i["Text"]) end)
